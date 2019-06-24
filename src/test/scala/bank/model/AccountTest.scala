@@ -14,7 +14,7 @@ class AccountTest extends WordSpec with Matchers {
   "Un compte" when {
 
     "qui vient d'etre creer" should {
-      "doit avoir une valuer de zero et un historique vide" in {
+      "doit avoir une valeur de zero et un historique vide" in {
         val account = Account()
         account.somme shouldBe INITIAL_BALANCE
         account.history shouldBe List.empty
