@@ -16,6 +16,11 @@ class PositifNumberTest extends WordSpec with Matchers {
         PositifNumber(0).value shouldBe 0
       }
 
+      "accepte les valeurs positif" in {
+        PositifNumber(100).value shouldBe 100
+        PositifNumber(24).value shouldBe 24
+      }
+
     }
   }
 
